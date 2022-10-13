@@ -124,6 +124,24 @@
   background: var(--black-gradient);
 }
 
+.client:hover{
+  animation: zoom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes zoom{
+  0%{
+    width: 10em;
+  }
+
+  50%{
+    width: 15em;
+  }
+
+  100%{
+    width: 20em;
+  }
+}
+
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
